@@ -1,0 +1,161 @@
+@import url("https://use.typekit.net/ial1hxa.css");
+@font-face {
+  font-family: "pokemon-pixel";
+  src: url("fonts/pokemon-dp-pro.ttf") format("truetype");
+  /*src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+       url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+       url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+       url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');*/
+}
+body {
+  background: #fcf2f8;
+  background-image: url("images/bg/roses.gif");
+  font-family: pokemon-pixel, acumin-pro, sans-serif;
+  font-style: normal;
+  color: #6b5ba6;
+}
+
+.cloud-container {
+  display: block;
+  position: absolute;
+  top: 350px;
+}
+
+.cloud-container img {
+  display: block;
+}
+
+.cloud-container text {
+  display: block;
+  position: relative;
+  text-align: center;
+  top: -130px;
+  left: -30px;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 5px black);
+}
+
+.lighter-container {
+  width: 350px;
+  transform: rotate(-55deg);
+  margin-left: 550px;
+}
+
+.lighter-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lighter-container flame > img {
+  position: relative;
+  width: 28%;
+  height: auto;
+  transform: rotate(90deg);
+  top: 85px;
+  left: 335px;
+  visibility: hidden;
+}
+
+.lighter-container text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: -114px;
+  transition: 0.4s;
+}
+
+.lighter-container text:hover {
+  cursor: pointer;
+  filter: brightness(60%) drop-shadow(1px 1px 20px mediumvioletred);
+}
+
+/*
+.grid-view div {
+  border: 1px dotted black;
+  z-index: 999;
+}
+
+.grid-view {
+  grid-column: 1/span all;
+  grid-row: 1/span all;
+}
+*/
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.container div {
+  aspect-ratio: 1;
+}
+
+.a {
+  background: none;
+}
+
+.a > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+h1 {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #444444;
+  color:;
+}
+
+h2 {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #444444;
+}
+*/
+h1 {
+  font-family: altesse-std-24pt, sans-serif;
+  font-weight: normal;
+  color: #fcf2f8;
+  font-size: 8em;
+  line-height: 0.5em;
+  text-align: center;
+  filter: drop-shadow(3px 3px 10px mediumvioletred);
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.box {
+  width: 700px;
+  margin: auto;
+}
+
+#header {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  background-color: #FDFDFD;
+}
+
+#first {
+  padding: 20px;
+  padding-bottom: 10px;
+  background-color: #FDFDFD;
+}
+
+#second {
+  padding: 20px;
+  background-color: #FDFDFD;
+}/*# sourceMappingURL=stylesheet.css.map */
