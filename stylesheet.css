@@ -1,0 +1,1097 @@
+@import url("https://use.typekit.net/ial1hxa.css");
+@font-face {
+  font-family: "pokemon-pixel";
+  src: url("fonts/pokemon-dp-pro.ttf") format("truetype");
+  /*src: url('fonts/fira/eot/FiraSans-Regular.eot') format('embedded-opentype'),
+       url('fonts/fira/woff2/FiraSans-Regular.woff2') format('woff2'),
+       url('fonts/fira/woff/FiraSans-Regular.woff') format('woff'),
+       url('fonts/fira/woff2/FiraSans-Regular.ttf') format('truetype');*/
+}
+body {
+  overflow: hidden;
+  background: #ebe6fc;
+  background-image: url("images/bg/bows.gif");
+  font-family: pokemon-pixel, acumin-pro, sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+h1 {
+  font-family: altesse-std-24pt, sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 7.5em;
+  margin-top: 0px;
+  text-align: center;
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+p {
+  font-size: 30px;
+  color: purple;
+  filter: drop-shadow(1px 1px 10px magenta);
+  margin: 0;
+}
+
+span {
+  font-size: 25px;
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -65px;
+  padding: 10px;
+  border-radius: 30px;
+  background: white;
+  color: purple;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+span::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.home {
+  position: absolute;
+}
+
+.home img {
+  transition: 0.4s;
+}
+
+.home:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.home:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* start of splash section */
+.splash-wrapper {
+  position: fixed;
+  z-index: 9999;
+  background-image: url("images/bg/space2.gif");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1.2s;
+  visibility: hidden;
+}
+
+.center {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center img {
+  width: 650px;
+}
+
+.c-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-text img {
+  width: 300px;
+  transition: 0.4s;
+}
+
+.c-text:hover img {
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 10px violet);
+}
+
+.bow1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(65%, -115%);
+}
+
+.bow1 img {
+  width: 225px;
+  transform: rotate(10deg);
+  transform-origin: center;
+}
+
+.flower1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-110%, -10%);
+}
+
+.flower1 img {
+  width: 375px;
+}
+
+/* end of splash section */
+/* start of paper section */
+.k1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-190%, -40%) rotate(-5deg);
+}
+
+.m1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%) rotate(5deg);
+}
+
+.m2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -30%) rotate(-1deg);
+}
+
+.m3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(85%, -54%);
+}
+
+.l1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-82%, 23%);
+  filter: brightness(150%);
+}
+
+.s-cake {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-450px, -300px);
+}
+
+/* end of paper section */
+.butterfly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-93%, 59%);
+}
+
+/* start of tape section */
+.t-buns-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-335%, -275%) rotate(-40deg);
+  filter: brightness(120%);
+}
+
+.t-buns-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-315%, 600%) rotate(2deg);
+  filter: brightness(120%);
+}
+
+/* end of tape section */
+/* start of sticker section */
+.s-emoji {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, 100%) rotate(-5deg);
+}
+
+.s-emoji img {
+  transition: 0.4s;
+}
+
+.s-emoji:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.s-sc1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(525px, -40px) rotate(5deg);
+}
+
+.s-sc1 img {
+  transition: 0.4s;
+}
+
+.s-sc1:hover img {
+  filter: drop-shadow(1px 1px 7px mediumvioletred);
+}
+
+.s-sc2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(150px, 75px) rotate(5deg);
+}
+
+.s-sc2 img {
+  transition: 0.4s;
+}
+
+.s-sc2:hover img {
+  filter: drop-shadow(1px 1px 7px mediumvioletred);
+}
+
+.s-strawbcat {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-350px, -100%) rotate(5deg);
+}
+
+.s-strawbcat img {
+  transition: 0.4s;
+}
+
+.s-strawbcat:hover img {
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 7px mediumvioletred);
+}
+
+.s-strawbs1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-450px, 200px) rotate(5deg);
+}
+
+.s-strawbs2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-785px, -300px) rotate(50deg);
+}
+
+.s-high {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(175px, -275px);
+}
+
+.s-high img {
+  transition: 0.4s;
+}
+
+.s-high:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.s-sleep {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(325px, 275px);
+}
+
+.s-star1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-800px, 50px);
+}
+
+.s-star1 img {
+  transition: 0.4s;
+}
+
+.s-star1:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.s-star2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-350px, -300px);
+}
+
+.s-star2 img {
+  transition: 0.4s;
+}
+
+.s-star2:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.s-star3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(25px, -100px);
+}
+
+.s-star3 img {
+  transition: 0.4s;
+}
+
+.s-star3:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.s-star4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(350px, -275px);
+}
+
+.s-star4 img {
+  transition: 0.4s;
+}
+
+.s-star4:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+/* end of sticker section */
+/* start of tooltip section */
+.s-emoji > span {
+  transform: rotate(5deg);
+}
+
+.s-emoji:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-sc1 > span {
+  transform: translate(0px, -10px) rotate(-5deg);
+}
+
+.s-sc1:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-sc2 > span {
+  transform: translate(-30px) rotate(-5deg);
+}
+
+.s-sc2:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-strawbcat > span {
+  transform: translate(0px, -20px) rotate(-5deg);
+}
+
+.s-strawbcat:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-high > span {
+  transform: translate(0px, -5px);
+}
+
+.s-high:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-star1 > span {
+  transform: translate(0px, -15px);
+}
+
+.s-star1:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-star2:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-star3 > span {
+  transform: translate(0px, -15px);
+}
+
+.s-star3:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.s-star4 > span {
+  transform: translate(0px, -10px);
+}
+
+.s-star4:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.angle-paper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(15%, -40%) rotate(2deg);
+}
+
+.angle-paper img {
+  max-width: 425px;
+  filter: brightness(95%);
+}
+
+.rainbow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-170%, -70%) rotate(-15deg);
+}
+
+.rainbow img {
+  max-width: 1000px;
+  filter: saturate(65%);
+}
+
+.angle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(15%, -40%) rotate(2deg);
+}
+
+.angle-text img {
+  max-width: 425px;
+  filter: brightness(95%);
+}
+
+/*
+.angle-paper2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, 5%);
+}
+
+.angle-paper2 img {
+  max-width: 600px;
+  filter: brightness(95%);
+}
+*/
+.rain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, 10%);
+}
+
+.rain img {
+  max-width: 500px;
+}
+
+.cloud1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -22%);
+}
+
+.cloud1 img {
+  max-width: 950px;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(15%, 15%);
+}
+
+.cloud2 img {
+  max-width: 1000px;
+}
+
+.angel1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(115%, -10%);
+}
+
+.angel1 img {
+  max-width: 325px;
+}
+
+.angel2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -55%);
+}
+
+.angel2 img {
+  max-width: 400px;
+}
+
+.tea-touch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-115%, -100%) rotate(35deg);
+}
+
+.tea-touch img {
+  max-width: 300px;
+}
+
+.touch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -150%);
+}
+
+.touch img {
+  max-width: 200px;
+}
+
+.dove {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-450%, -200%);
+}
+
+.dove img {
+  max-width: 125px;
+  filter: brightness(115%);
+}
+
+.god {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-190%, 50%);
+}
+
+.god img {
+  max-width: 350px;
+}
+
+.candle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 40%);
+}
+
+.candle img {
+  max-width: 100px;
+}
+
+.candle2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, 10%);
+}
+
+.candle2 img {
+  max-width: 80px;
+}
+
+.candle3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -20%);
+}
+
+.candle3 img {
+  max-width: 100px;
+}
+
+.meme-angel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-450%, -200%);
+}
+
+.meme-angel img {
+  max-width: 175px;
+}
+
+.chibi-couple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(235%, -130%);
+}
+
+.chibi-couple img {
+  max-width: 180px;
+}
+
+.fav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -200%);
+}
+
+.fav img {
+  max-width: 750px;
+}
+
+.red-hk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+.red-hk img {
+  max-width: 450px;
+}
+
+.girl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(100%, -45%);
+}
+
+.girl img {
+  max-width: 400px;
+}
+
+.lol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lol img {
+  max-width: 275px;
+}
+
+.hat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-450%, -200%);
+}
+
+.hat img {
+  max-width: 175px;
+}
+
+.earring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-1100%, -175%) rotate(5deg);
+}
+
+.earring img {
+  max-width: 55px;
+}
+
+.sweater {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250%, -50%) rotate(2deg);
+}
+
+.sweater img {
+  max-width: 300px;
+}
+
+.boxers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-275%, 0%) rotate(-9deg);
+}
+
+.boxers img {
+  max-width: 250px;
+  transition: 0.4s;
+}
+
+.boxers:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.boxers:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.boxers > span {
+  transform: translate(0px, 20px) rotate(5deg);
+}
+
+.pants {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-240%, 30%);
+}
+
+.pants img {
+  max-width: 295px;
+  transition: 0.4s;
+}
+
+.pants:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.note {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -40%) rotate(-3deg);
+}
+
+.note img {
+  max-width: 500px;
+  filter: saturate(110%) contrast(105%);
+}
+
+.note-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, 5%) rotate(2deg);
+}
+
+.note-2 img {
+  max-width: 650px;
+}
+
+.tower {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(18%, -26%);
+}
+
+.tower img {
+  max-width: 700px;
+}
+
+.scroll-container {
+  width: 668px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-image: url("images/kitten/bg/glitter.jpeg");
+  filter: saturate(200%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-115%, -85%);
+  border-radius: 25px;
+}
+
+.scroll-container img {
+  aspect-ratio: 1;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 25px;
+  filter: saturate(65%);
+}
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(57%, -102%);
+}
+
+.rotate img {
+  max-width: 250px;
+}
+
+.butterfly-chain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-180%, -5%);
+}
+
+.butterfly-chain img {
+  max-width: 105px;
+}
+
+.cuddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(160%, -173%) rotate(-10deg);
+}
+
+.cuddle img {
+  max-width: 225px;
+}
+
+.pair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(220%, -214%);
+}
+
+.pair img {
+  max-width: 250px;
+  filter: brightness(90%) contrast(150%);
+}
+
+.heart-wings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(620%, -320%);
+}
+
+.heart-wings img {
+  max-width: 100px;
+}
+
+.heart-cats {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-15deg) translate(121%, 90%);
+}
+
+.heart-cats img {
+  max-width: 250px;
+  filter: saturate(120%);
+}
+
+.nyan-cat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-278%, 175%);
+}
+
+.nyan-cat img {
+  max-width: 300px;
+  filter: saturate(80%);
+}
+
+.catboy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-15%, -30%) rotate(-3deg);
+}
+
+.catboy img {
+  max-width: 275px;
+}
+
+.note-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, 5%) rotate(2deg);
+}
+
+.note-text img {
+  max-width: 650px;
+}
+
+.s-cat1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-427%, -50%) rotate(-20deg);
+}
+
+.s-cat1 img {
+  max-width: 200px;
+}
+
+.s-cat2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 425%);
+}
+
+.s-cat2 img {
+  max-width: 150px;
+  transition: 0.4s;
+}
+
+.s-cat2:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.s-cat3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -250%) rotate(5deg);
+}
+
+.s-cat3 img {
+  max-width: 67px;
+  transition: 0.4s;
+}
+
+.s-cat3:hover img {
+  filter: drop-shadow(1px 1px 10px mediumvioletred);
+}
+
+.s-cat4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, 750%);
+}
+
+.s-cat4 img {
+  max-width: 100px;
+}
+
+.s-cat5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -500%) rotate(-45deg);
+}
+
+.s-cat5 img {
+  max-width: 100px;
+}
+
+.balloons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(310%, 60%);
+}
+
+.balloons img {
+  max-width: 200px;
+}
+
+.postit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.postit img {
+  max-width: 350px;
+}
+
+.starpaper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -150%);
+}
+
+.starpaper img {
+  max-width: 200px;
+  filter: brightness(115%);
+}
+
+.moongirl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -5%);
+}
+
+.moongirl img {
+  max-width: 300px;
+}
+
+.lighter-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  transform: translate(-50%, -50%) rotate(-55deg);
+}
+
+.lighter-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lighter-container flame > img {
+  position: relative;
+  width: 28%;
+  height: auto;
+  transform: rotate(90deg);
+  top: 85px;
+  left: 335px;
+  visibility: hidden;
+}
+
+.lighter-container text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: -114px;
+  transition: 0.4s;
+}
+
+.lighter-container text:hover {
+  cursor: pointer;
+  filter: brightness(60%) drop-shadow(1px 1px 20px mediumvioletred);
+}
+
+.doily1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%, -100%);
+}
+
+.doily1 img {
+  max-width: 300px;
+}/*# sourceMappingURL=stylesheet.css.map */
